@@ -344,26 +344,30 @@ background-color: var(--hover-color);
 .social-list-link:focus .social-list-icon{
   fill: #ffffff;
 }
-.costomers{
+/*==========COSTUMORS==========*/
+.our-costumers{
   padding-top: 94px;
+  padding-bottom: 94px;
 }
-.costomer-list-link{
+.coustumer-list{
   display: flex;
   justify-content: space-between;
 }
-.our-costumers{
+.our-costumers-h{
 font-weight: 700;
 font-size: 36px;
 line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
 color:var(--text-color);
+margin-bottom: 50px;
 }
-.client-linl{
+.client-link{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;height: 90px;
+  width: 170px;
+  height: 90px;
 }
 .client-list-link{
   width: 100%;
@@ -380,10 +384,12 @@ color:var(--text-color);
 .client-list-link:focus{
   border-color: var(--hover-color);
 }
+.client-list-link:focus 
+.client-list-link:hover {
+  fill: var(--hover-color);
+}
 .client-icon{
-  fill: var(--p-color);
-  width: 90px;
-  height: 60px;
+  fill: #AFB1B8;;
 }
 
 
