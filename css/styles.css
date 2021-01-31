@@ -195,17 +195,31 @@ display: inline-block;
     height:  600px;
   }
 
-   /*==========section-title===========*/
+   /*==========features===========*/
   
   .features{
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .benefits-div-icon{
+  width: 270px;
+  height: 120px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
   .post-list{
   display: flex;
   }
   .post-title{
     width: 270px;
+    
     }
     .post-title:not(:last-child){
       margin-right: 30px;
@@ -297,6 +311,8 @@ margin-right: 30px;
  background-color: #FFFFFF;
  border: 1px solid #EEEEEE;
  box-sizing: border-box;
+ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+ border-radius: 0px 0px 4px 4px;
 }
 .our-names {
   font-weight: 600;
@@ -379,16 +395,20 @@ margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #AFB1B8;
+  
 }
-.client-list-link:hover
-.client-list-link:focus{
+/*.client-list-link:hover .client-icon
+.client-list-link:focus .client-icon{
   border-color: var(--hover-color);
-}
+}*/
+
+
 .client-list-link:focus 
 .client-list-link:hover {
-  fill: var(--hover-color);
+  color: var(--hover-color);
 }
-.client-icon{
+/*.client-icon{
   fill: #AFB1B8;;
 }
 
@@ -398,13 +418,11 @@ margin-bottom: 50px;
     padding: 60px 0;
     background: var(--bg-color);
   }
-  .join-us{
+  .joing-us{
     display: flex;
-    padding: 72px 70px;
+    justify-content: baseline;
   }
   .join{
-    display: inline-block;
-    justify-content: baseline;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
@@ -412,6 +430,37 @@ margin-bottom: 50px;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+  }
+  .social-list-link-footer:not(:last-child){
+    margin-right: 10px;
+    
+  }
+  .social-list-icon-footer{
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    fill: #ffffff; 
+  }
+  
+  
+  .social-list-link-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    border-radius: 50%;
+  }
+
+  .social-list-link-footer:hover,
+  .social-list-link-footer:focus{
+  background-color: var(--hover-color);
+  }
+  .social-list-link-footer:hover .social-list-icon-footer,
+  .social-list-link-footer:focus .social-list-icon-footer{
+    fill: #ffffff;
   }
 
   .logo-2 {
@@ -464,7 +513,7 @@ margin-bottom: 50px;
   }
 
 /*===========PORTFOLIO============*/
-/*---buttons такаие же как и встудии--*/
+
 .main-title{
   padding-top: 94px;
   padding-bottom: 94px;
@@ -507,13 +556,14 @@ margin-bottom: 50px;
     .portfolio-button:hover,
     .portfolio-button:focus
      {
-       cursor: pointer;
+      cursor: pointer;
       background-color: var(--hover-color);
       color: #FFFFFF;
     }
 .btn-link:not(:last-child){
   margin-right: 8px;
 }
+/*===========main-title=======*/
 .link-title-img{
   display: flex;
   flex-wrap: wrap;
@@ -525,18 +575,19 @@ margin-bottom: 50px;
   margin-bottom: 30px;
   background-color: #FFFFFF;
   border: 1px solid #EEEEEE;
-  box-sizing: border-box;
-  box-shadow: 
-  0px 1px 1px rgba(0, 0, 0, 0.12), 
-  0px 4px 4px rgba(0, 0, 0, 0.06), 
-  1px 4px 6px rgba(0, 0, 0, 0.16);
+ 
 }
 .navigation-link:nth-child(3n){
   margin-right: 0;
 }
+.navigation-link-img{
+  display: block;
+}
 .navigation-link-img:focus
 .navigation-link-img:hover{
-  color: var(--hover-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+   1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
 .our-works {
